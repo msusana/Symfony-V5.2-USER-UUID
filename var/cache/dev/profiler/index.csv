@@ -1,0 +1,12 @@
+7f3ac6,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/,1630584514,,200
+7751dd,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/favicon.ico,1630584515,be00aa,404
+be00aa,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/favicon.ico,1630584515,,404
+b32d02,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/,1630584810,,200
+dfe347,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/login,1630584812,,200
+ec733c,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/,1630584844,,200
+a8a4ae,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/register,1630584845,dda7ad,500
+dda7ad,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/register,1630584845,,500
+b7fef6,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/register,1630584877,,200
+c00dd7,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/login,1630584883,,200
+32c35e,172.16.238.1,POST,http://symfony-v5.2-user-uuid.loc/register,1630584914,,302
+b55fa6,172.16.238.1,GET,http://symfony-v5.2-user-uuid.loc/,1630584914,,200

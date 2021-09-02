@@ -29,6 +29,7 @@ class __TwigTemplate_a51ca8251e6bb87101383760d58d462a7ca8d1fe8bbcdce2835ba30d237
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'stylesheets' => [$this, 'block_stylesheets'],
+            'body' => [$this, 'block_body'],
             'javascripts' => [$this, 'block_javascripts'],
         ];
     }
@@ -73,9 +74,16 @@ class __TwigTemplate_a51ca8251e6bb87101383760d58d462a7ca8d1fe8bbcdce2835ba30d237
 
         ";
         // line 25
-        $this->displayBlock('javascripts', $context, $blocks);
+        $this->displayBlock('body', $context, $blocks);
         // line 28
-        echo "    </body>
+        echo "
+        ";
+        // line 29
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 32
+        echo "
+       
+    </body>
 </html>
 
 
@@ -130,6 +138,28 @@ class __TwigTemplate_a51ca8251e6bb87101383760d58d462a7ca8d1fe8bbcdce2835ba30d237
     }
 
     // line 25
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 26
+        echo "            ";
+        // line 27
+        echo "        ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 29
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -139,9 +169,9 @@ class __TwigTemplate_a51ca8251e6bb87101383760d58d462a7ca8d1fe8bbcdce2835ba30d237
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 26
+        // line 30
         echo "            ";
-        // line 27
+        // line 31
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -158,7 +188,7 @@ class __TwigTemplate_a51ca8251e6bb87101383760d58d462a7ca8d1fe8bbcdce2835ba30d237
 
     public function getDebugInfo()
     {
-        return array (  145 => 27,  143 => 26,  133 => 25,  123 => 18,  121 => 17,  111 => 16,  92 => 9,  78 => 28,  76 => 25,  68 => 19,  66 => 16,  60 => 12,  56 => 9,  46 => 1,);
+        return array (  175 => 31,  173 => 30,  163 => 29,  153 => 27,  151 => 26,  141 => 25,  131 => 18,  129 => 17,  119 => 16,  100 => 9,  84 => 32,  82 => 29,  79 => 28,  77 => 25,  69 => 19,  67 => 16,  61 => 12,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -187,13 +217,19 @@ class __TwigTemplate_a51ca8251e6bb87101383760d58d462a7ca8d1fe8bbcdce2835ba30d237
     
     <body>
 
+        {% block body %}
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
+
+       
     </body>
 </html>
 
 
-", "base.html.twig", "/home/simplon/devilbox2/data/www/Brocante/templates/base.html.twig");
+", "base.html.twig", "/shared/httpd/Symfony-V5.2-User-UUID/templates/base.html.twig");
     }
 }
